@@ -1,0 +1,435 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>FSAESIM 大学生方程式模拟竞速系统</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  
+  <link rel="icon" type="image/png" href="/img/favicon.png" />
+  <link href="/img/favicon.png" rel="shortcut icon" type="image/png">
+  
+  <style type="text/css">
+  body {
+  display: block;
+  position: center;
+   background-attachment:scroll;
+  z-index: 900;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+	background-image: url(../img/back05.jpg);
+  background-size:cover; 
+  background-position-x:center;
+ 
+}
+
+
+  a:link {
+    font: inherit;
+	color: #FA6;
+	text-decoration: none;
+}
+  a {
+  text-decoration: none;
+  color: #DF9C81; 
+	font-size: 18px;
+}
+  a:visited {
+	text-decoration: none;
+	color: #FA6;
+}
+a:hover {
+	text-decoration: underline;
+    color: #d06c44;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s; 
+}
+a:active {
+	text-decoration: none;
+	font-size: 15px;
+}
+  body,td,th {
+	color: #FFF;
+	font-size: 18px;
+	font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-weight: lighter;
+  -webkit-font-smoothing: antialiased; 
+}
+  .t14 {
+	font-size: 15px;
+}
+  .T12 {
+	font-size: 15px;
+}
+
+hr {
+  border: none; }
+
+.panel-cover__divider {
+  width: 50%;
+  margin: 20px auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.14); }
+  
+h1{ 
+margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin-bottom: .5em;
+  font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-weight: lighter;
+  color: #FFF;
+  -webkit-font-smoothing: antialiased; 
+    margin-top: 0;
+  font-size: 1.8em;
+  line-height: 1.2em;
+  letter-spacing: .05em; }
+
+  </style>
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+  </head>
+  <!--<header class="panel-cover " style="background-image: url('/assets/siteinfo/background-cover.jpg')">
+  </header>-->
+  <body onLoad="MM_preloadImages('img/silverstone GP_b.jpg','img/Hockenheimring_GP_b.jpg','img/dream circuit.png','img/Mont Tremblant.png','img/Goparc.png','img/Kartodromo de Valencia.png','img/Bathurst_b.jpg','img/interlagos_b.jpg','img/nurburgring-Sprint(GT)_b.jpg','img/Akina_Uphill_b.jpg','img/nordschleife-endurance_b.jpg','img/Bathurst(Day)_b.jpg','img/nurburgring-gp_gt_b.jpg')">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><table width="1024" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td height="70" colspan="2" align="center"><table width="1024" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+				<br />
+				<p class="panel-cover__description">
+				<td width="170" align="center"><img src="img/brand title.png" height="50"></td>
+				<td width="854" align="center" style="font-size:40px">大学生方程式模拟竞速 FSAESIM</td>
+				</p>
+        
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td width="517" rowspan="2">&nbsp;</td>
+          <td width="507" height="28">&nbsp;</td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <table width="1024" border="0" align="center" cellpadding="0" cellspacing="0">
+				<hr class="panel-cover__divider" />
+    <tr>
+      <td colspan="2" align="center"><span class="t14"><a href="http://topbug.iask.in:3721/acquery1.jsp?type1=mugello&serverid=BUG1&trackconfig=" target="_blank" onMouseOver="MM_swapImage('Image18','','img/mugello_b.jpg',0)" onMouseOut="MM_swapImgRestore()"></a></span></td>
+    </tr>
+    <tr>
+      <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="831">赛道查询&nbsp;&nbsp;Track Selection</td>
+      <td width="193" align="right">&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="2"><table width="1024" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="341" align="center">&nbsp;</td>
+          <td width="342" align="center">&nbsp;</td>
+          <td width="341" align="center">&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="center"><a href="http://188.131.224.117:50041/lapstat?currservers=FSAESIM-1" target="_blank" onMouseOver="MM_swapImage('Image1','','img/Mont Tremblant.png',1)" onMouseOut="MM_swapImgRestore()"><img src="img/Mont Tremblant.png" width="270" height="142" id="Image1"></a></td>
+          <td align="center"><a href="http://188.131.224.117:50041/lapstat?currservers=FSAESIM-2" target="_blank" onMouseOver="MM_swapImage('Image2','','img/Goparc.png',1)" onMouseOut="MM_swapImgRestore()"><img src="img/Goparc.png" width="270" height="142" id="Image2"></a></td>
+          <td align="center"><a href="http://188.131.224.117:50041/lapstat?currservers=FSAESIM-3" target="_blank" onMouseOver="MM_swapImage('Image3','','img/Kartodromo de Valencia.png',1)" onMouseOut="MM_swapImgRestore()"><img src="img/Kartodromo de Valencia.png" width="270" height="142" id="Image3"></a></td>
+        </tr>
+		
+        <tr>
+          <td align="center" class="t14"><a href="https://acstuff.ru/s/q:race/online/join?ip=188.131.224.117&httpPort=20000" target="_blank" class="t14">FSAESIM-1 室外卡丁赛道-Mont Tremblant</a></td>
+          <td align="center" class="t14"><a href="https://acstuff.ru/s/q:race/online/join?ip=188.131.224.117&httpPort=20002" target="_blank" class="t14">FSAESIM-2 室内卡丁赛道-Goparc</a></td>
+          <td align="center" class="t14"><a href="https://acstuff.ru/s/q:race/online/join?ip=188.131.224.117&httpPort=20004" target="_blank" class="t14">FSAESIM-3 室外卡丁赛道-Kartodromo de Valencia</a></td>
+        </tr>
+        <tr>
+          <td align="center" class="t14">&nbsp;</td>
+          <td align="center" class="t14">&nbsp;</td>
+          <td align="center" class="t14">&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="center" class="t14"><a href="http://188.131.224.117:50041/lapstat?currservers=FSAESIM-RGB" target="_blank" onMouseOver="MM_swapImage('Image4','','img/monaco roc.png',1)" onMouseOut="MM_swapImgRestore()"><img src="img/monaco roc.png" width="270" height="142" id="Image4"></a></td>
+          <td align="center" class="t14"><a href="http://188.131.224.117:50041/lapstat?currservers=FSAESIM-RACE" target="_blank" onMouseOver="MM_swapImage('Image8','','img/dream circuit.png',1)" onMouseOut="MM_swapImgRestore()"><img src="img/dream circuit.png" width="270" height="142" id="Image5"></a></td>
+        </tr>
+        <tr>
+          <td align="center" class="t14"><a href="https://acstuff.ru/s/q:race/online/join?ip=188.131.224.117&httpPort=20006" target="_blank" class="t14">FSAESIM-RGB 世界车王争霸赛 Monaco ROC</a></td>
+          <td align="center" class="t14"><a href="https://acstuff.ru/s/q:race/online/join?ip=188.131.224.117&httpPort=20008" target="_blank" class="t14">FSAESIM-RACE 襄阳梦想赛车场 Dream Circuit</a></td>
+        </tr>
+        <!--<tr>
+          <td align="center" class="t14">&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="center" class="t14"><a href="http://topbug.iask.in:50041/lapstat?currservers=BUG7" target="_blank" onMouseOver="MM_swapImage('Image7','','img/nordschleife-tourist_b.jpg',0)" onMouseOut="MM_swapImgRestore()"><img src="img/nordschleife-tourist_a.jpg" name="Image7" width="270" height="142" id="Image23"></a></td>
+          <td align="center" class="t14"><a href="http://topbug.iask.in:50041/lapstat?date_from=2018-10-01&currservers=BUG8" target="_blank" onMouseOver="MM_swapImage('Image8','','img/nordschleife-endurance_b.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="img/nordschleife-endurance_a.jpg" width="270" height="142" id="Image8"></a></td>
+          <td align="center" class="t14"><a href="http://topbug.iask.in:50041/lapstat?currservers=BUG9" target="_blank" onMouseOver="MM_swapImage('Image9','','img/Top_Gear_b.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="img/Top_Gear_a.jpg" width="270" height="142" id="Image9"></a><a href="http://topbug.iask.in:3721/acquery.jsp?type1=mugello&serverid=BUG1&trackconfig=" target="_blank" onMouseOver="MM_swapImage('Image18','','img/mugello_b.jpg',0)" onMouseOut="MM_swapImgRestore()"></a></td>
+        </tr>
+        <tr>
+          <td align="center" class="t14"><img src="img/list02.gif" alt="" width="28" height="11">Server: BUG7 纽博格林北环赛道公众日</td>
+          <td align="center" class="t14"><img src="img/list02.gif" alt="" width="28" height="11">Server: BUG8  纽博格林耐力赛道</td>
+          <td align="center" class="t14"><img src="img/list02.gif" alt="" width="28" height="11">Server: BUG9 英国TopGear官方赛道</td>
+        </tr>
+        <tr>
+          <td align="center" class="t14">&nbsp;</td>
+          <td align="center" class="t14">&nbsp;</td>
+          <td align="center" class="t14">&nbsp;</td>
+        </tr>-->
+        <tr>
+          <td align="center" class="t14">&nbsp;</td>
+          <td align="center" class="t14">&nbsp;</td>
+          <td align="center" class="t14">&nbsp;</td>
+        </tr>
+      </table></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="right">&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="2">&nbsp;</td>
+    </tr>
+  </table>
+  <table width="1024" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>服务器赛道车辆mod下载&nbsp;&nbsp;Server Mod Download</td>
+    </tr>
+    <tr>
+      <td><table width="900" border="0" align="center" cellpadding="2" cellspacing="2">
+        <tr>
+          <td width="25" align="center">&nbsp;</td>
+          <td width="420">&nbsp;</td>
+          <td width="25" align="center">&nbsp;</td>
+          <td width="420">&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="25" align="center"></td>
+          <td class="t14"><a href="https://pan.baidu.com/s/1fGHxhtBiq7EBCmR8Ehljpg" target="_blank" class="T12">【赛道】FSAESIM-1 Mont Tremblant</a></td>
+          <td align="center"></td>
+          <td class="t14"><a href="https://pan.baidu.com/s/150E6RGyLiyIdrs7IBemI-g" target="_blank" class="T12">【赛道】FSAESIM-2 Goparc</a></td>
+        </tr>
+        <tr>
+          <td align="center">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td align="center">&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="center"></td>
+          <td><span class="t14"><a href="https://pan.baidu.com/s/1i_EawL2uE-U6F9g2o2zoqQ" target="_blank" class="T12">【赛道】FSAESIM-3 Kartodromo de Valencia</a></span></td>
+          <td align="center"></td>
+          <td><span class="t14"><a href="https://pan.baidu.com/s/1Q6BrzYh0P_Jr1vSTYfu5aw" target="_blank" class="T12">【赛道】FSAESIM-RGB Monaco ROC</a></span></td>
+        </tr>
+        <tr>
+          <td align="center">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td align="center">&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="center"></td>
+          <td class="t14"><a href="https://pan.baidu.com/s/1qWHZItY" target="_blank" class="T12">【赛道】FSAESIM-RACE 襄阳梦想赛车场</a></td>
+          <td align="center"></td>
+          <td class="t14"><a href="https://pan.baidu.com/s/1C9D49kSQ4UA6TURBgwOCVw" target="_blank" class="T12">【车辆】Ford Fiesta WRC</a></td>
+		</tr>
+        <tr>
+          <td align="center">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td align="center">&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="center"></td>
+          <td class="t14"><a href="https://pan.baidu.com/s/17Ju7aJ_EMxBIFltrd1uu3g" target="_blank" class="T12">【车辆】Formula Student UCM 2016</a></td>
+          <td align="center"></td>
+          <td class="t14"><a href="https://pan.baidu.com/s/1i900yKwqpRFbJXwm3LsctA" target="_blank" class="T12">【车辆】GoKart 卡丁车</a></td>
+        </tr>
+        <!--<tr>
+          <td align="center">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td align="center">&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="center"><img src="img/list04.png" alt="" width="20" height="20"></td>
+          <td><span class="t14"><a href="http://topbug.iask.in:50041/lapstat?currservers=BUG9" target="_blank" class="T12">Server：BUG9-Track Day（公众赛道日）</a></span></td>
+          <td align="center">&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>-->
+      </table></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+  <table width="1024" border="0" align="center" cellpadding="0" cellspacing="0">
+    <!--<tr>
+      <td>主播联盟 Network Anchor Link</td>
+    </tr>
+    <tr>
+      <td><table width="1024" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="220">&nbsp;</td>
+          <td width="220">&nbsp;</td>
+          <td width="194">&nbsp;</td>
+          <td width="194">&nbsp;</td>
+          <td width="196">&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="center"><a href="https://www.douyu.com/hya" target="_blank"><img src="img/zb_xingding.jpg" width="110" height="110"></a></td>
+          <td align="center"><a href="https://www.douyu.com/294171" target="_blank"><img src="img/zb_torresmvp.jpg" width="110" height="110"></a></td>
+          <td align="center"><a href="http://www.panda.tv/602648" target="_blank"><img src="img/zb_eastd.jpg" width="110" height="110"></a></td>
+          <td align="center"><a href="http://www.panda.tv/594602" target="_blank"><img src="img/zb_misaki.jpg" width="110" height="110"></a></td>
+          <td align="center"><a href="https://www.douyu.com/1226850" target="_blank"><img src="img/zb_jianwowo.jpg" width="110" height="110"></a></td>
+        </tr>
+        <tr>
+          <td align="center"><span class="t14" id="topicNameWrapper" data-tid="2148" data-fid="525">新丁一个</span></td>
+          <td align="center"><span class="t14">torresMVP</span></td>
+          <td align="center" class="t14">竞速EastD</td>
+          <td align="center" class="t14">Misaki酱汁</td>
+          <td align="center"><span class="t14">劍锅锅</span></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="center"><a href="https://www.douyu.com/230303" target="_blank"><img src="img/zb_297499719.jpg" width="110" height="110"></a></td>
+          <td align="center"><a href="https://www.douyu.com/2125271" target="_blank"><img src="img/zb_gudulaogou.jpg" width="110" height="110"></a></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="center"><span class="t14">297499719</span></td>
+          <td align="center"><span class="t14">孤独的老狗</span></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table></td>
+    </tr>-->
+  </table>
+  
+  
+   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<hr class="panel-cover__divider" />
+    <tr>
+      <td><table width="1024" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="517" rowspan="2">&nbsp;</td>
+          <td width="507" height="28">&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="507" rowspan="2" align="right"><table width="450" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="150" align="center"><img src="img/scan1.gif" alt="" width="120" height="120"></td>
+              <td width="300"><span class="t14">TopRace模拟竞速AC群(QQ)：536025106<br>
+                <br>
+                TopRace论坛：<a href="http://www.toprace.vip" target="_blank" class="t14">点击进入</a>                  <br>
+                <br>
+                TopRace百度贴吧：<a href="https://tieba.baidu.com/f?kw=toprace&fr=wwwt" target="_blank" class="t14">点击进入</a><br>
+                <br>
+                AC服务器：搜索BUG</span></td>
+              </tr>
+            <tr>
+              <td align="center" class="t14">扫描二维码加入</td>
+              <td>&nbsp;</td>
+              </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><table width="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+            <tr>				
+              <td width="150" align="center"><img src="img/assettocorsa.png" alt="" height="120"></td>
+              <td width="300"><span class="t14">
+				站主博客：<a href="https://huangluzhi.github.io/" target="_blank" class="t14">点击进入</a>                  <br>
+                <br>
+                AC服务器：搜索 <a href="https://acstuff.ru/s/q:race/online/join?ip=188.131.224.117&httpPort=20000" target="_blank" class="t14">FSAESIM</a> <br>
+				<br>
+				<a href="https://huangluzhi.github.io/customview/silversharkmod" target="_blank" class="t14">银鲨 VII - Assetto Corsa mod 制作</a>
+				</span>
+				</td>
+              
+			  
+				<tr>
+              <td>&nbsp;</td>
+              </tr>
+             </tr>
+			 <!-- <tr>
+              <td height="40" colspan="2" valign="top"><table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td><a href="/week/toprace2018.html" target="_blank">2018年赛事排行 TopRace Week</a></td>
+                  <td><a href="week/toprace2017_2.html" target="_blank"></a></td>
+                  </tr>
+                </table></td>
+              </tr>
+            <tr>
+              <td width="43%" height="40" valign="top"><table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td height="28"><a href="/week/toprace2018_INITIAL_D.html" target="_blank">山路魔王2018</a></td>
+                  <td><a href="week/toprace2017_2.html" target="_blank"><img src="img/hot.gif" alt="" width="46" height="28"></a></td>
+                  </tr>
+                </table></td>
+              <td width="57%" valign="top"><table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td height="28"><a href="/week/toprace2018_Nordschleife.html" target="_blank">纽北之王2018</a></td>
+                  <td><a href="week/toprace2017_2.html" target="_blank"><img src="img/hot.gif" alt="" width="46" height="28"></a></td>
+                  </tr>
+                </table></td>
+            </tr>
+            <tr>
+              <td height="40" colspan="2" valign="top"><table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td height="28"><a href="/week/toprace2017.html" target="_blank">2017年周赛排行 TopRace Week</a></td>
+                  <td>&nbsp;</td>
+                  </tr>
+                </table></td>
+            </tr>
+            <tr>
+              <td height="40" colspan="2" valign="top"><table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td height="28"><a href="/week/toprace2016.html" target="_blank">2016年周赛排行 TopRace Week</a></td>
+                  <td>&nbsp;</td>
+                  </tr>
+                </table></td>
+            </tr>-->
+          </table></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+</body>
+</html>
